@@ -20,9 +20,11 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = ViewController1()
-        let page2 = ViewController2()
-        let page3 = ViewController3()
+        let page1 = OnboardingViewController(heroImageView: "gondor", titleText: "Gondor es el nombre que recibió el reino del exilio del Sur que fue fundado después de la Caída de Númenor por Isildur y su hermano Anárion. El padre de ambos, Elendil, fundador de Arnor, el reino del exilio del Norte, también ejercía soberanía sobre Gondor.")
+        
+        let page2 = OnboardingViewController(heroImageView: "mordor", titleText: "Mordor es un país situado al sureste de la Tierra Media, que tuvo gran importancia durante la Guerra del Anillo por ser el lugar donde Sauron, el Señor Oscuro, decidió edificar su fortaleza de Barad-dûr para intentar atacar y dominar a todos los pueblos de la Tierra Media. Se trata de una región desolada, rodeada de montañas con un interior desértico sin vegetación.")
+        
+        let page3 = OnboardingViewController(heroImageView: "rohan", titleText: "Rohan es un reino fundado por los Hombres del Norte, los Eorlingas, que ocupa las grandes llanuras cubiertas de pastos situadas al norte de las Montañas Blancas y al este de las Montañas Nubladas. Sus habitantes descienden de los hombres de Éothéod, y se caracterizan por ser amantes de los caballos y por ser los principales aliados del reino de Gondor.")
         
         pages.append(page1)
         pages.append(page2)
@@ -40,7 +42,7 @@ class OnboardingContainerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .systemPurple
+        view.backgroundColor = .magenta
         
         addChild(pageViewController)
         view.addSubview(pageViewController.view)

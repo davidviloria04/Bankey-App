@@ -50,9 +50,8 @@ extension LoginViewController{
     }
     
     private func layout(){
-        view.addSubview(loginView)
-        view.addSubview(signInButton)
-        view.addSubview(errorMessageLabel)
+        
+        [loginView, signInButton, errorMessageLabel].forEach(view.addSubview)
         
         //LoginView
         NSLayoutConstraint.activate([
