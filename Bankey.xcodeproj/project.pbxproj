@@ -13,6 +13,8 @@
 		3F2882EF27F15B970003F5F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F2882ED27F15B970003F5F7 /* LaunchScreen.storyboard */; };
 		3F5355B3281A2AA900E2E0B9 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5355B2281A2AA900E2E0B9 /* DummyViewController.swift */; };
 		3F56352C27F8EAF40035622D /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F56352B27F8EAF40035622D /* OnboardingContainerViewController.swift */; };
+		3F694D0C281B0DDE00763A20 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F694D0B281B0DDE00763A20 /* UIViewController+Utils.swift */; };
+		3F694D0E281B0FCF00763A20 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F694D0D281B0FCF00763A20 /* MainViewController.swift */; };
 		3FA6D41C28089BDE00490DF1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6D41B28089BDE00490DF1 /* OnboardingViewController.swift */; };
 		3FAF40D727F1655A00D49881 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF40D627F1655A00D49881 /* LoginView.swift */; };
 		3FFE57E4281A3627000E5A1E /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE57E3281A3627000E5A1E /* LocalState.swift */; };
@@ -27,6 +29,8 @@
 		3F2882F027F15B970003F5F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F5355B2281A2AA900E2E0B9 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		3F56352B27F8EAF40035622D /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
+		3F694D0B281B0DDE00763A20 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		3F694D0D281B0FCF00763A20 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3FA6D41B28089BDE00490DF1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3FAF40D627F1655A00D49881 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		3FFE57E3281A3627000E5A1E /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
@@ -62,11 +66,12 @@
 		3F2882E127F15B950003F5F7 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				3FFE57E2281A35FC000E5A1E /* Utils */,
 				3F2882E227F15B950003F5F7 /* AppDelegate.swift */,
+				3F694D0D281B0FCF00763A20 /* MainViewController.swift */,
 				3F56352A27F8EAAB0035622D /* Onboarding */,
 				3FAF40D427F1651700D49881 /* Login */,
 				3FAF40D527F1652900D49881 /* Files */,
+				3FFE57E2281A35FC000E5A1E /* Utils */,
 			);
 			path = Bankey;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3FFE57E3281A3627000E5A1E /* LocalState.swift */,
+				3F694D0B281B0DDE00763A20 /* UIViewController+Utils.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -178,11 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F694D0C281B0DDE00763A20 /* UIViewController+Utils.swift in Sources */,
 				3FAF40D727F1655A00D49881 /* LoginView.swift in Sources */,
 				3FFE57E4281A3627000E5A1E /* LocalState.swift in Sources */,
 				3F5355B3281A2AA900E2E0B9 /* DummyViewController.swift in Sources */,
 				3F2882E727F15B950003F5F7 /* LoginViewController.swift in Sources */,
 				3FA6D41C28089BDE00490DF1 /* OnboardingViewController.swift in Sources */,
+				3F694D0E281B0FCF00763A20 /* MainViewController.swift in Sources */,
 				3F2882E327F15B950003F5F7 /* AppDelegate.swift in Sources */,
 				3F56352C27F8EAF40035622D /* OnboardingContainerViewController.swift in Sources */,
 			);
