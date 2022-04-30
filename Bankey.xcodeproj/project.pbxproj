@@ -17,6 +17,7 @@
 		3F694D0E281B0FCF00763A20 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F694D0D281B0FCF00763A20 /* MainViewController.swift */; };
 		3FA6D41C28089BDE00490DF1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA6D41B28089BDE00490DF1 /* OnboardingViewController.swift */; };
 		3FAF40D727F1655A00D49881 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF40D627F1655A00D49881 /* LoginView.swift */; };
+		3FBCB24C281E00DC00A5470D /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBCB24B281E00DC00A5470D /* AccountSummaryViewController.swift */; };
 		3FFE57E4281A3627000E5A1E /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FFE57E3281A3627000E5A1E /* LocalState.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		3F694D0D281B0FCF00763A20 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3FA6D41B28089BDE00490DF1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		3FAF40D627F1655A00D49881 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		3FBCB24B281E00DC00A5470D /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		3FFE57E3281A3627000E5A1E /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,8 +70,9 @@
 			children = (
 				3F2882E227F15B950003F5F7 /* AppDelegate.swift */,
 				3F694D0D281B0FCF00763A20 /* MainViewController.swift */,
-				3F56352A27F8EAAB0035622D /* Onboarding */,
 				3FAF40D427F1651700D49881 /* Login */,
+				3F56352A27F8EAAB0035622D /* Onboarding */,
+				3FBCB24A281DFFE200A5470D /* AccountSummary */,
 				3FAF40D527F1652900D49881 /* Files */,
 				3FFE57E2281A35FC000E5A1E /* Utils */,
 			);
@@ -103,6 +106,14 @@
 				3F2882F027F15B970003F5F7 /* Info.plist */,
 			);
 			name = Files;
+			sourceTree = "<group>";
+		};
+		3FBCB24A281DFFE200A5470D /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				3FBCB24B281E00DC00A5470D /* AccountSummaryViewController.swift */,
+			);
+			name = AccountSummary;
 			sourceTree = "<group>";
 		};
 		3FFE57E2281A35FC000E5A1E /* Utils */ = {
@@ -191,6 +202,7 @@
 				3F2882E727F15B950003F5F7 /* LoginViewController.swift in Sources */,
 				3FA6D41C28089BDE00490DF1 /* OnboardingViewController.swift in Sources */,
 				3F694D0E281B0FCF00763A20 /* MainViewController.swift in Sources */,
+				3FBCB24C281E00DC00A5470D /* AccountSummaryViewController.swift in Sources */,
 				3F2882E327F15B950003F5F7 /* AppDelegate.swift in Sources */,
 				3F56352C27F8EAF40035622D /* OnboardingContainerViewController.swift in Sources */,
 			);
