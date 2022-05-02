@@ -10,10 +10,12 @@ import UIKit
 class AccountSummaryHeaderView: UIView {
     
     @IBOutlet var contentView: UIView!
+    @IBOutlet weak var headerIcon: UIImageView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
+        loadGit()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,5 +38,10 @@ class AccountSummaryHeaderView: UIView {
         contentView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
         contentView.trailingAnchor.constraint(equalTo: self.trailingAnchor).isActive = true
         contentView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
+    }
+    
+    func loadGit(){
+        let git = UIImage.gifImageWithName("Barad-Dur2")
+        headerIcon.image = git
     }
 }
